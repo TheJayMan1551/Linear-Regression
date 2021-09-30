@@ -8,8 +8,8 @@ import statsmodels.api as sm
 data = pd.read_csv('grades.csv')
 dataNum = pd.read_csv('gradesNum.csv')
 
-# sns.lmplot(x='gpa', y='rating', data=data, hue='Courses', fit_reg=False)
-# plt.show()
+sns.lmplot(x='gpa', y='rating', data=data, hue='Courses', fit_reg=False)
+plt.show()
 
 x = dataNum['x']
 y = dataNum['y']
