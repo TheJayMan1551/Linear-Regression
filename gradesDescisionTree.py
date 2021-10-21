@@ -18,11 +18,10 @@ algo.fit(X_train, y_train)
 
 showData = tree.export_text(algo, feature_names=rating, max_depth=10)
 
-predict_db = pd.DataFrame({"score": 9}, index=[1])
+predict_db = pd.DataFrame({"rating": 9}, index=[1])
 
 prediction = algo.predict(predict_db)
 
-print(f'SHOWING TREE\n___________________________\n\n{showData}')
+print(f'Decision Tree\n=====================\n\n{showData}')
 
-print(
-    f'With an interest score of 9 the predicted grade of ML is : {prediction}')
+print(f'Machine Learning predicted grade: {prediction}')
